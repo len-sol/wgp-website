@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WGP - Stabilizer & Battery Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-[Poppins] bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center space-x-2">
+                        <img src="IMG-20250417-WA0048.jpg" alt="WGP Logo" class="h-12">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="px-4 py-2 text-gray-700 hover:text-blue-600 transition-all duration-300 relative group">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+                    <a href="#about" class="px-4 py-2 text-gray-700 hover:text-blue-600 transition-all duration-300 relative group">
+                        About Us
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+                    <a href="#stabilizer" class="px-4 py-2 text-gray-700 hover:text-blue-600 transition-all duration-300 relative group">
+                        Products
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+                    <a href="#location" class="px-4 py-2 text-gray-700 hover:text-blue-600 transition-all duration-300 relative group">
+                        Location
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+                    <a href="warranty.html" class="px-4 py-2 text-gray-700 hover:text-blue-600 transition-all duration-300 relative group">
+                        Warranty
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+                    </div>
+            
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button p-2 rounded-lg hover:bg-blue-50 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-4 space-y-1">
+                <a href="#" class="block px-4 py-2 text-base font-medium text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200">Home</a>
+                <a href="#about" class="block px-4 py-2 text-base font-medium text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200">About</a>
+                <a href="#stabilizer" class="block px-4 py-2 text-base font-medium text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200">Products</a>
+                <a href="#stabilizer" class="block px-4 py-2 text-base font-medium text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200">Products</a>
+                <a href="#contact" class="block px-4 py-2 text-base font-medium text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200">Contact</a>
+                
+            </div>
+        </div>
+    </nav>
+
+    </header>
+<br><br><br>
+    <section id="warranty" class="section">
+        <h2>Warranty Registration</h2>
+        <form id="warranty-form" action="warranty.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="serial">Serial Number</label>
+                <input type="text" id="serial" name="serial" required>
+            </div>
+            <div class="form-group">
+                <label for="payment">Upload Your Invoice</label>
+                <input type="file" id="payment" name="payment" required>
+            </div>
+            <div>
+                <button type="submit" class="upload-btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
